@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Profolio</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1 class="logo"><span>A</span>darsh</h1>
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Pojects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="home">
+          <div class="home-col-1">
+            <div class="header_text">
+              <h2>Hello, It's Me</h2>
+              <h1><span>Adarsh Kushwaha</span></h1>
+              <h2>And I'm a <span class="multiple-text"></span></h2>
+              <p>
+                a passionate and detail-oriented Front-End Developer
+                specializing in React.
+              </p>
+            </div>
+            <div class="email">
+              <p>Email: <br /><span>adarshkushwaha692@gmail.com</span></p>
+            </div>
+            <div class="hire">
+              <a href="Images/Adarsh's Resume.pdf" class="btn" download >Download CV</a>
+            </div>
+          </div>
+          <div class="home-col-2">
+            <img src="Images/react-js-developer.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/about.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello, I'm Adarsh kushwaha, a passionate and enthusiastic
+              front-end developer. I love creating engaging and user-friendly
+              web experiences through code. With a strong foundation in HTML,
+              CSS, and JavaScript, and React , I am constantly learning and
+              exploring new front-end technologies.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development </span> <br />HTML, CSS, JavaScript and
+                  ReactJs. <br>And also familiar with Redux and Git.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>02/2023 - Present </span> <br />Frontend Developer
+                  trainee at FunctionUp
+                </li>
+                <li>
+                  <span>2019 - 2021 (Mechanical Field)</span> <br />Executive
+                  engineer at JBM Group.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2015 - 2019 </span> <br />B.tech in Mechanical
+                  engineering from KIT kanpur college
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              As a Frontend Developer, I specialize in crafting user-friendly
+              and visually appealing interfaces for websites and web
+              applications. With a strong foundation in HTML, CSS, and
+              JavaScript, I bring designs to life and ensure seamless user
+              experiences.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              A UI/UX designer is responsible for creating visually appealing
+              and user-friendly interfaces for digital products. They combine
+              their skills in design, psychology, and technology to enhance the
+              user experience (UX) and ensure an intuitive and enjoyable
+              interaction with the product.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-lists">
+          <div class="project">
+            <img src="Images/Project-1.png" alt="" />
+            <div class="layer">
+              <h3>GYM Website</h3>
+              <p>
+                Created a simple GYM website using ReactJs. In this website user
+                can visit all the pages like home, about, program, training and
+                pricing page. And user can register and login. After
+                successfully login they can subscribe our weekly, monthly or
+                yearly passes, and after subscription they can access respective
+                pass activity page.
+              </p>
+              <a href="https://muscle-club-gym.onrender.com" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="Images/Project-2.png" alt="" />
+            <div class="layer">
+              <h3>Twitter Clone</h3>
+              <p>
+                Created a twitter clone website using ReactJs. In this project
+                user can access home page after successfully registation and
+                login. In tweet section user can tweet a message with or without
+                picture. This website is a fully responsive also.
+              </p>
+              <a
+                href="https://my-twitter-clone-website.onrender.com"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="Images/Project-3.png" alt="" />
+            <div class="layer">
+              <h3>Kanban Broard</h3>
+              <p>
+                In this Kanban Board user can create multiple list and inside
+                list they can create multiple task also. And whenever user will
+                click on a perticuler task and then it will navigate dynamically
+                to the description page where they can add a description for
+                that perticuler task and also comments on that activity.
+              </p>
+              <a href="https://kanban-board-y2a1.onrender.com" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="Images/Project-4.png" alt="" />
+            <div class="layer">
+              <h3>Pizza Bite</h3>
+              <p>
+                This is a simple frontend web application, where user can select
+                any pizza with choice of variants and number of quantities, and
+                they can able to add to cart muliples pizza. And inside the cart
+                user can able to chnage number of quantyties of pizza and they
+                can also delete the pizza item. One more functionality also
+                given that is user can get 30% discount on total price, if user
+                will enter his first name on code input than they will get 30%
+                discount.
+              </p>
+              <a href="https://pizza-bite-8672.onrender.com" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- <a href="#">See more</a> -->
+      </div>
+    </div>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>adarshkushwaha692@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 7275668234</p>
+            <div class="social-icons">
+              <a href="www.linkedin.com/in/
+              adarsh-kushwaha-616b2b272
+              " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100005312359351" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+              <a href="https://www.instagram.com/adarshkushwaha26/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="https://twitter.com/Adarshk321" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+            <a href="Images/Adarsh's Resume.pdf" download class="btn"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name " />
+              <input type="email" name="Email" placeholder="Your Email" />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 by Adarsh | All rights reserved.</p>
+      </div>
+    </div>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxPQIgHQr8CgRdqKmNOLCH2x6z8h32N3NhdrNK0zcpQ7MYPNjMcsabbhg4PogFiLvJQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <!-- ---scroll reveal----- -->
+    <script>
+      ScrollReveal({
+        // reset: true,
+        distance: "80px",
+        duration: 2000,
+        delay: 200,
+      });
+      ScrollReveal().reveal(".sub-title, .header_text, .services-list", {
+        origin: "top",
+      });
+      ScrollReveal().reveal(".about-col-1", { origin: "left" });
+      ScrollReveal().reveal(".home-col-2, .contact-right", { origin: "right" });
+      ScrollReveal().reveal(".project", { interval: 500, origin: "top" });
+      ScrollReveal().reveal(".tab-titles, .sub-tiltl,p,  .btn, .social-icons", {
+        origin: "bottom",
+      });
+    </script>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      const typed = new Typed(".multiple-text", {
+        strings: ["Frontend Developer."],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
